@@ -1,0 +1,32 @@
+.youtube__cont {color: var(--white); font-family: var(--kor_font); font-weight: 400;
+    div {
+        .video{
+            display: flex;
+            span{flex: 1 1 50%;
+                h2 {white-space: pre-wrap; font-size: 3em; max-width: 350px; margin-right: auto;}}
+            img {flex: 1 1 50%;}
+        }
+        .img{
+            margin-top: 130px;
+            display: flex;
+            align-items: start;
+            img{flex: 1 1 50%; margin-right: 50px;}
+            table{color: var(--white); font-family: var(--kor_font); font-weight: 400;}
+            th{
+                font-size: 1.2em;
+                padding-bottom: 6.5vh;
+                vertical-align: top;
+            }
+            td{
+                font-size: 1em;
+                padding-bottom: 6.5vh;
+            }
+        }
+    }
+}
+
+//animation
+.youtube__inner {
+    opacity: 0;
+    transform: translate(0, 100px);
+}

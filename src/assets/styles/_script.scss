@@ -1,0 +1,30 @@
+.script__cont {
+    color: var(--white); font-family: var(--kor_font); padding-bottom: 5vh;
+        span {display: inline-block; font-size: 1.2em; border: 1px solid var(--btn_boder); border-radius: 50%; width: 50px; height: 50px; margin: 25px 0 25px 10px; text-align: center; line-height: 45px;}
+        span.active{border: 1px dashed;}
+}
+    h3{font-size: 30px; font-weight: 400; margin-bottom: 16px;}
+    .desc{display: flex; margin-bottom: 130px;
+        p{flex: 1 1 30%;}
+    p:nth-child(1){margin-right: 50px;}
+}
+
+@media (max-width: 1060px){
+    .script__cont{
+        .desc{flex-direction: column; text-align: left;
+            p:first-child{margin-bottom: 20px;}
+        }
+    }
+}
+
+//light
+.light.script__cont  {
+    background: var(--light_bg);
+    color: var(--black);
+}
+
+//animation
+.script__inner {
+    opacity: 0;
+    transform: translate(0, 100px);
+}

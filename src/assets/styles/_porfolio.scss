@@ -1,0 +1,52 @@
+//port__cont
+body {
+    background: #000;
+}
+
+.port__cont {
+    padding-bottom: 20vh;
+    background: var(--dark_bg);
+}
+.port__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.port__item {
+    flex: 1 1 30%;
+    margin: 1%;
+    max-width: 30%;
+    .text {
+        padding: 1.4rem;
+        background-color: #151517;
+        h3 {
+            color: var(--white);
+            font-family: var(--main_font);
+            font-size: 2.6rem;
+            line-height: 1;
+            padding-top: 0.2em;
+            text-transform: uppercase;
+        }
+        p {
+            color: var(--white);
+            font-family: var(--sub_font);
+            margin-top: 0.4em;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .port__inner {
+        justify-content: space-between;
+
+        .port__item {
+            max-width: initial;
+        }
+    }
+}
+
+//animation
+.port__inner {
+    opacity: 0;
+    transform: translate(0, 100px);
+}
