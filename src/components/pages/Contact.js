@@ -22,19 +22,19 @@ class Contact extends React.Component {
                 bottom: 0,
                 delay: 0.2
             });
-            gsap.to(".text div:nth-child(1)", {
+            gsap.to(".text > div:nth-child(1)", {
                 duration: 0.5,
                 y: 0,
                 opacity: 1,
                 delay: 1.0
             });
-            gsap.to(".text div:nth-child(2)", {
+            gsap.to(".text > div:nth-child(2)", {
                 duration: 0.5,
                 y: 0,
                 opacity: 1,
                 delay: 1.3
             });
-            gsap.to(".text div:nth-child(3)", {
+            gsap.to(".text > div:nth-child(3)", {
                 duration: 0.5,
                 y: 0,
                 opacity: 1,

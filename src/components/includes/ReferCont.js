@@ -1,46 +1,25 @@
-import React from 'react'
-import {Link} from "react-router-dom";
-function ReferItem({id,title,desc}) {
+import React from 'react';
+import propType from "prop-types";
+import { Link } from "react-router-dom";
+function ReferCont({id, title, desc, use, desc2, element, tag, version, view, image, link, Definition, Accessibility, Related, mdn, w3c}) {
   return (
-              <tr>
-                <td>{id}</td>
-                <td>{title}</td>
-                <td>
-                  <Link to={{
-                      pathname: "/ReferDetail",
-                      state: {id, title, desc},
-                  }}>{desc.slice(0, 180)}
-                  </Link>
-                </td>
-              </tr>
+    <li>
+      <Link to={{
+        pathname: "ReferDetail",
+        state: {id, title, desc, use, desc2, element, tag, version, view, image, link, Definition, Accessibility, Related, mdn, w3c}
+      }}>
+        <span className="id">{id}</span>
+        <span className="title">{title}</span>
+        <span className="desc">{desc}</span>
+        <span className="use">{use}</span>
+      </Link>
+    </li>
   )
 }
-function ReferCont({refers, color}) {
-  return (
-    <section className={`refer__cont ${color}`}>
-      <div className="container">
-        <div className="refer__inner">
-          <h2>CSS</h2>
-          <table>
-            <colgroup>
-              <col style={{width: "10%"}} />
-              <col style={{width: "20%"}} />
-              <col style={{width: "70%"}} />
-            </colgroup>
-            <tbody>
-                  {refers.map(refers => (
-                      <ReferItem
-                      key= {refers.id}
-                      id={refers.id}
-                      title= {refers.title}
-                      desc= {refers.desc}
-                      />
-                  ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-  )
+ReferCont.propType = {
+  id: propType.number.isRequired,
+  title: propType.string.isRequired,
+  desc: propType.string.isRequired,
+  use: propType.string.isRequired,
 }
-export default ReferCont
+export default ReferCont;
