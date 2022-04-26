@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieList from "../includes/MovieList";
+import MovieSearch from "../includes/MovieSearch";
 
 function MovieCont(props) {
     console.log(props)
@@ -7,8 +8,8 @@ function MovieCont(props) {
     <section className="movie__cont">
         <div className="container">
             <div className="movie__inner">
-                {/* <movieSearch /> */}
-                <MovieList lists={props.lists}/>
+                <MovieSearch onSearch={props.search} />
+                <MovieList videos={props.videos}/>
             </div>
         </div>
     </section>
