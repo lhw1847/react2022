@@ -128,12 +128,12 @@ class Reference extends React.Component {
                 opacity: 1,
                 delay: 1.3
             });
-            // gsap.to(".refer__inner", {
-            //     duration: 0.5,
-            //     y: 0,
-            //     opacity: 1,
-            //     delay: 1.5
-            // });
+            gsap.to(".refer__inner", {
+                duration: 0.5,
+                y: 0,
+                opacity: 1,
+                delay: 1.5
+            });
         },10)
     }
 

@@ -39,12 +39,12 @@ class ReferDetail extends React.Component {
                 bottom: 0,
                 delay: 0.2
             });
-            // gsap.to(".refer__inner", {
-            //     duration: 0.5,
-            //     y: 0,
-            //     opacity: 1,
-            //     delay: 1.5
-            // });
+            gsap.to(".refer__inner", {
+                duration: 0.5,
+                y: 0,
+                opacity: 1,
+                delay: 1.5
+            });
         },10)
     }
     render(){
@@ -67,7 +67,7 @@ class ReferDetail extends React.Component {
                                 <p>{location.state.desc}</p>
                                 <div className="img_table">
                                 <div className='img'>
-                                    <img src={location.state.image} />
+                                    <img src={location.state.image} alt={location.state.title} />
                                 </div>
                                 <table className="table">
                                     <thead>
@@ -111,7 +111,7 @@ class ReferDetail extends React.Component {
                                         <tbody>
                                             <tr>
                                                 <th>출처</th>
-                                                <td><a target="_blank" href={location.state.link}>{location.state.link}</a></td>
+                                                <td><a target="_blank" rel="noreferrer" href={location.state.link}>{location.state.link}</a></td>
                                             </tr>
                                             <tr>
                                                 <th>정의</th>
@@ -129,11 +129,11 @@ class ReferDetail extends React.Component {
                                             </tr>
                                             <tr>
                                                 <th>MDN웹문서</th>
-                                                <td><a target="_blank" href={location.state.mdn}>{location.state.mdn}</a></td>
+                                                <td><a target="_blank" rel="noreferrer" href={location.state.mdn}>{location.state.mdn}</a></td>
                                             </tr>
                                             <tr>
                                                 <th>w3c</th>
-                                                <td><a target="_blank" href={location.state.w3c}>{location.state.w3c}</a></td>
+                                                <td><a target="_blank" rel="noreferrer" href={location.state.w3c}>{location.state.w3c}</a></td>
                                             </tr>
 
                                         </tbody>

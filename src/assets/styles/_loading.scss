@@ -77,7 +77,7 @@ body.light{background: var(--light_bg);
     }
 }
 
-#loading.loading__active.light{
+#loading.light{
     background: var(--light_bg);
     .loading__text span{
         color: var(--black);

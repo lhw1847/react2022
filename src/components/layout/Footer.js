@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer(props){
     return(
         <footer id="footer" className={props.color}>
@@ -7,18 +9,18 @@ function Footer(props){
             </div>
             <div>
                 <h4>Kakao</h4>
-                <a href="#">LeeHyunwoo</a>
+                <Link to="#">LeeHyunwoo</Link>
             </div>
             <div>
                 <h4>soail</h4>
                 <ul>
-                    <li><a href="#">Youtube</a></li>
-                    <li><a href="#">Instargram</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Cafe</a></li>
-                    <li><a href="#">Reference</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">CSS</a></li>
+                    <li><Link to="#">Youtube</Link></li>
+                    <li><Link to="#">Instargram</Link></li>
+                    <li><Link to="#">Github</Link></li>
+                    <li><Link to="#">Cafe</Link></li>
+                    <li><Link to="#">Reference</Link></li>
+                    <li><Link to="#">Tutorials</Link></li>
+                    <li><Link to="#">CSS</Link></li>
                 </ul>
             </div>
         </footer>
