@@ -67,7 +67,7 @@ class Main extends React.Component {
     }
     render(){
         const {isLoading} = this.state;
-        console.log(process.env);
+        console.log(process.env.REACT_APP_API);
         return (
             <>
            {isLoading ? (
