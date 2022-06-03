@@ -1,0 +1,32 @@
+{
+  "data": {
+    "type": "css",
+    "cssRefer": [
+      {
+        "id": 1,
+        "title": "align-content",
+        "desc": "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+        "desc2": "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+        "element": "",
+        "tag": "",
+        "version": "CSS3",
+        "view": "",
+        "use": "★★★☆☆",
+        "image": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/KWSlV/btq4MTbqRrV/r2vIqzLlKBOtVKsBX8sga0/img.png",
+        "link": "https://webzz.tistory.com/361",
+        "Definition": [
+          "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+          "align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+        ],
+        "Accessibility": [
+          "flex는 효율적으로 요소를 배치하거나 정렬 할 수 있는 레이아웃 방식입니다.",
+          "flex에서 사용하는 속성은 부모 요소인 컨테이너(Container)와 자식 요소인 아이템(Item)으로 구성됩니다."
+        ],
+        "CrossBroswing": [],
+        "Related": [],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content",
+        "w3c": "https://drafts.csswg.org/css-flexbox-1/#align-content-property"
+      }
+    ]
+  }
+}
